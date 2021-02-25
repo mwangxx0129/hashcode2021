@@ -1,7 +1,6 @@
 package com.hashcode2021.practice;
 
 
-import com.hashcode2021.FileReader;
 import com.hashcode2021.practice.solver.GreedySolver;
 import com.hashcode2021.practice.type.Problem;
 
