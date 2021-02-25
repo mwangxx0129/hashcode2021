@@ -16,7 +16,15 @@ public class Main {
         String A = "a.txt";
 
         List<String> lines = readFromInputStream(new FileInputStream(dir + A));
-//        drive("C", lines, new ProblemParser());
+        drive("A", lines, new ProblemParser());
+    }
+
+    public static void drive(String prefix, List<String> lines, ProblemParser parser) {
+        System.out.println("Parsing input ...\n");
+        for (String line : lines) {
+            parser.feedLine(line);
+        }
+        parser.get().summarize();
     }
 
     public static List readFromInputStream(InputStream inputStream)

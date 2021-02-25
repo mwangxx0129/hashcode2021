@@ -56,4 +56,15 @@ public class Street {
     public void setId(long id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Street{" +
+                "id=" + id +
+                ", startingIntersection=" + startingIntersection +
+                ", endingIntersection=" + endingIntersection +
+                ", name='" + name + '\'' +
+                ", timeToTravel=" + timeToTravel +
+                '}';
+    }
 }

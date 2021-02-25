@@ -35,4 +35,14 @@ public class Intersection {
     public void setId(long id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return Long.toString(id);
+//        return "Intersection{" +
+//                "id=" + id +
+//                ", incomingStreet=" + incomingStreet +
+//                ", outgoingStreet=" + outgoingStreet +
+//                '}';
+    }
 }

@@ -66,4 +66,15 @@ public class Car {
     public void setId(long id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", numStreets=" + numStreets +
+                ", streetList=" + streetList +
+                ", isArrived=" + isArrived +
+                ", arrivalTime=" + arrivalTime +
+                '}';
+    }
 }

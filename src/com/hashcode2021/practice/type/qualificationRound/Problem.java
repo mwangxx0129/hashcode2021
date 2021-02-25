@@ -81,20 +81,31 @@ public class Problem {
     public void setIntersectionsMap(Map<Integer, Intersection> intersectionsMap) {
         this.intersectionsMap = intersectionsMap;
     }
-//
-//    public String summarize() {
+
+    public void summarize() {
+        System.out.println(
+                "duration=" + duration +
+                "\nnumIntersections=" + numIntersections +
+                        "\n numStreets=" + numStreets +
+                        "\n numCars=" + numCars +
+                        "\n points=" + points
+
+        );
+
+        System.out.println("nameToStreets=" + nameToStreets);
+        System.out.println("carsMap=" + carsMap);
 //        return """
 //                ######
 //                # duration: %d
-//                # duration: %d
-//                # Teams of 2: %d
-//                # Teams of 3: %d
-//                # Teams of 4: %d
+//                # numIntersections: %d
+//                # numStreets of 2: %d
+//                # numCars of 3: %d
+//                # points of 4: %d
 //                # Different ingredients: %d
 //                ######
 //                """.formatted(
 //                duration,
-//                numTwoTeams,
+//                numIntersections,
 //                numThreeTeams,
 //                numFourTeams,
 //                pizzas.stream()
@@ -102,5 +113,5 @@ public class Problem {
 //                        .distinct()
 //                        .count()
 //        );
-//    }
+    }
 }
