@@ -19,6 +19,13 @@ public class Car {
         this.arrivalTime = arrivalTime;
     }
 
+    public Car(long id, List<Street> streetList, int numStreets, boolean isArrived, int arrivalTime) {
+        this.id = id;
+        this.streetList = streetList;
+        this.numStreets = numStreets;
+        this.isArrived = isArrived;
+        this.arrivalTime = arrivalTime;
+    }
 
     public int getNumStreets() {
         return numStreets;

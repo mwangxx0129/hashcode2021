@@ -1,5 +1,7 @@
 package com.hashcode2021.practice.type.qualificationRound;
 
+import com.hashcode2021.practice.type.Pizza;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,9 +10,12 @@ public class Problem {
     private int numIntersections;
     private int numStreets;
     private int numCars;
-    private Map<Integer,Street> streetsMap = new HashMap<>();
-    private Map<Integer,Car> carsMap= new HashMap<>();
-    private Map<Integer,Intersection> intersectionsMap = new HashMap<>();
+    private int points;
+    public Map<Integer,Intersection> intersectionsMap = new HashMap<>();
+    public Map<Integer,Street> idToStreets = new HashMap<>();
+    public Map<String,Street> nameToStreets = new HashMap<>();
+    public Map<String, Integer> streetToIds = new HashMap<>();
+    public Map<Integer,Car> carsMap= new HashMap<>();
 
     public int getDuration() {
         return duration;
@@ -44,12 +49,21 @@ public class Problem {
         this.numCars = numCars;
     }
 
-    public Map<Integer, Street> getStreetsMap() {
-        return streetsMap;
+
+    public int getPoints() {
+        return points;
     }
 
-    public void setStreetsMap(Map<Integer, Street> streetsMap) {
-        this.streetsMap = streetsMap;
+    public void setPoints(int points) {
+        this.points = points;
+    }
+
+    public Map<Integer, Street> getIdToStreets() {
+        return idToStreets;
+    }
+
+    public void setIdToStreets(Map<Integer, Street> idToStreets) {
+        this.idToStreets = idToStreets;
     }
 
     public Map<Integer, Car> getCarsMap() {
@@ -67,4 +81,26 @@ public class Problem {
     public void setIntersectionsMap(Map<Integer, Intersection> intersectionsMap) {
         this.intersectionsMap = intersectionsMap;
     }
+//
+//    public String summarize() {
+//        return """
+//                ######
+//                # duration: %d
+//                # duration: %d
+//                # Teams of 2: %d
+//                # Teams of 3: %d
+//                # Teams of 4: %d
+//                # Different ingredients: %d
+//                ######
+//                """.formatted(
+//                duration,
+//                numTwoTeams,
+//                numThreeTeams,
+//                numFourTeams,
+//                pizzas.stream()
+//                        .map(Pizza::getIngredients)
+//                        .distinct()
+//                        .count()
+//        );
+//    }
 }

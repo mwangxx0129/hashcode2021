@@ -3,13 +3,13 @@ package com.hashcode2021.practice.type.qualificationRound;
 public class Street {
 
     private long id;
-    private Street startingIntersection;
-    private Street endingIntersection;
+    private Intersection startingIntersection;
+    private Intersection endingIntersection;
     private String name;
     private int timeToTravel;
 
 
-    public Street(long id, Street startingIntersection, Street endingIntersection, String name, int timeToTravel) {
+    public Street(long id, Intersection startingIntersection, Intersection endingIntersection, String name, int timeToTravel) {
         this.id = id;
         this.startingIntersection = startingIntersection;
         this.endingIntersection = endingIntersection;
@@ -25,19 +25,19 @@ public class Street {
         this.name = name;
     }
 
-    public Street getStartingIntersection() {
+    public Intersection getStartingIntersection() {
         return startingIntersection;
     }
 
-    public void setStartingIntersection(Street startingIntersection) {
+    public void setStartingIntersection(Intersection startingIntersection) {
         this.startingIntersection = startingIntersection;
     }
 
-    public Street getEndingIntersection() {
+    public Intersection getEndingIntersection() {
         return endingIntersection;
     }
 
-    public void setEndingIntersection(Street endingIntersection) {
+    public void setEndingIntersection(Intersection endingIntersection) {
         this.endingIntersection = endingIntersection;
     }
 
