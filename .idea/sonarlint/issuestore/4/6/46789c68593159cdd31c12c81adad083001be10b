@@ -1,0 +1,9 @@
+
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8Ï€‰½ü.
+[
+squid:S106+"9Replace this use of System.out or System.err by a logger.(á¼ˆ­úÿÿÿÿ8İ—Ä½ü.
+V
+squid:S106,"9Replace this use of System.out or System.err by a logger.(„²¨8±ó¼½ü.
+Xsquid:S1118	":Add a private constructor to hide the implicit public one.(§¢ªà8ÿ®…½ü.
+Fsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¼½ü.
+|squid:S3012$"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(á‹¶“ÿÿÿÿÿ8¤‰Ã½ü.

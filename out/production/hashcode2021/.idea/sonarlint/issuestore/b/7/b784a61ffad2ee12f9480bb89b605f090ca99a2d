@@ -1,0 +1,4 @@
+
+Msquid:S1444"6Make this "public static totalIngredients" field final(Ö—ÃÖ
+Š"squid:ClassVariableVisibilityCheck"\Make totalIngredients a static final constant or non-public and provide accessors if needed.(Ö—ÃÖ
+Usquid:S11550">Use isEmpty() to check whether the collection is empty or not.(ÈÊ°ð
