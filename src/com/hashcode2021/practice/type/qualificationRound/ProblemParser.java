@@ -46,8 +46,8 @@ public class ProblemParser {
 
             // Parse street and intersection definition
             AtomicInteger idx = new AtomicInteger();
-            Intersection start = new Intersection(Integer.parseInt(nums.get(0)));
-            Intersection end = new Intersection(Integer.parseInt(nums.get(1)));
+            Intersection start = result.intersectionsMap.getOrDefault(Integer.parseInt(nums.get(0)), new Intersection(Integer.parseInt(nums.get(0))));
+            Intersection end = result.intersectionsMap.getOrDefault(Integer.parseInt(nums.get(1)), new Intersection(Integer.parseInt(nums.get(1))));
 
             // To create street, create start and end intersections first
             result.intersectionsMap.put(Integer.parseInt(nums.get(0)), start);
@@ -59,8 +59,8 @@ public class ProblemParser {
             result.streetToIds.put(nums.get(2), idx.getAndIncrement());
 
             // post process
-            start.getOutgoingStreet().add(street);
-            end.getIncomingStreet().add(street);
+            start.getOutgoingStreet().add(street.getName());
+            end.getIncomingStreet().add(street.getName());
 
         } else {
             // Parse car definition

@@ -94,6 +94,7 @@ public class Problem {
 
         System.out.println("nameToStreets=" + nameToStreets);
         System.out.println("carsMap=" + carsMap);
+        System.out.println("intersectionsMap="+ intersectionsMap);
 //        return """
 //                ######
 //                # duration: %d
